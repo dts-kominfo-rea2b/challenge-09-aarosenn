@@ -4,12 +4,9 @@ import React from 'react';
 import style from "./contact.css";
 
 const Contact = ({data}) => {
-    const {name, phone, email, photo} = data;
+    const { name, email, phone, photo } = data;
     return (
-        <div className = {StyleSheet.Contact}>
-            <div className= {StyleSheet.contact__avatar}>
-                <img src={photo} alt={name} />
-            </div>
+        <div className={style.contact}>
             <div className={style.contact__avatar}>
                 <img src={photo} alt={name} />
             </div>
