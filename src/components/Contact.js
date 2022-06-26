@@ -23,6 +23,7 @@ const Contact = ({data}) => {
                 </div>
             </div>
         </div>
+    )
 }
 
 export default Contact;
