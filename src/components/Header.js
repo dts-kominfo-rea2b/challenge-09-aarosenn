@@ -3,10 +3,10 @@ import React from 'react';
 
 const Header = () => {
     return (
-       <div>
-        <h1 className='title'> Call A Friend</h1>
-        <h3 className='sub-title'>"your friendly contact app"</h3>
-       </div>
+        <header className={style.header}>
+        <h1 className={style.header_title}>Call a Friend</h1>
+        <p className={style.header_subtitle}>your friendly contact app </p>
+    </header>
     )
 }
 

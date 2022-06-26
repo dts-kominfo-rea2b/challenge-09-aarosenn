@@ -3,19 +3,25 @@
 import React from 'react';
 
 const Contact = ({data}) => {
-    const {name, phone, email, photo} = data
+    const {name, phone, email, photo} = data;
     return (
-        <div className = 'card'>
-            <div className= 'image-contact'>
-                <img src={photo} alt='broken' className='photo-contact'/>
+        <div className = {StyleSheet.Contact}>
+            <div className= {StyleSheet.contact__avatar}>
+                <img src={photo} alt={name} />
             </div>
-            <div className='data-contact'>
-                <h1 className='name'>{name}</h1>
-                <h2 className='phone'>{phone}</h2>
-                <h2 className='email'>{email}</h2>
+            <div className={style.contact__avatar}>
+                <img src={photo} alt={name} />
+            </div>
+            <div className={style.contact__info}>
+                <p className={style.contact__info__txt}>
+                    <b>{name}</b>
+                </p>
+                <div className={style.contact__infodesc}>
+                    <p className={style.contact__infodesc__txt}>{phone}</p>
+                    <p className={style.contact__infodesc__txt}>{email}</p>
+                </div>
             </div>
         </div>
-    )
 }
 
 export default Contact;
